@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Feedback Form</h1>
+        <p id="description">Please take a few minutes to answer the questions below</p>
+    </header>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required>
+        
+        <label for="dropdown">Choose your gender:</label>
+        <select id="dropdown" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label>Do you like the app?</label>
+        <input type="radio" id="yes" name="like" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="like" value="no">
+        <label for="no">No</label>
+        
+        <label>Which features do you like?</label>
+        <input type="checkbox" id="feature1" name="features" value="design">
+        <label for="feature1">Design</label>
+        <input type="checkbox" id="feature2" name="features" value="functionality">
+        <label for="feature2">Functionality</label>
+        <input type="checkbox" id="feature3" name="features" value="ease-of-use">
+        <label for="feature3">Ease of use</label>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
